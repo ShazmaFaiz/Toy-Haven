@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Toy Haven is a modern online toy and collectibles store for figurines, toys, board games and diecast cars."
+    />
+    <meta name="theme-color" content="#17243a" />
+    <meta name="author" content="Toy Haven" />
+    <title>Toy Haven | Home</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Toy Haven home"
+        ><img src="images/logo.png" alt="Toy Haven logo" /><span
+          class="brand-name"
+          ><span>Toy</span> Haven</span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a
+        ><a class="" href="products.html">Products</a
+        ><a class="" href="wishlist.html">Wishlist</a
+        ><a class="" href="feedback.html">Support</a
+        ><a class="" href="cart.html">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" aria-label="Toy Haven promotions">
+        <div class="hero-slide active">
+          <div class="hero-copy">
+            <p class="eyebrow">COLLECT • PLAY • DISCOVER</p>
+            <h1>A little more joy in every box.</h1>
+            <p>
+              Discover toys, games, figurines and diecast favourites made for
+              collectors, families and curious minds.
+            </p>
+            <a class="button" href="products.html">Shop Now →</a>
+          </div>
+          <div class="hero-art">
+            <div class="hero-art-card">
+              <img
+                src="images/products/teddy-photo.png"
+                alt="Classic teddy bear illustration"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="hero-copy">
+            <p class="eyebrow">FIGURINES</p>
+            <h1>Bring your favourite worlds to life.</h1>
+            <p>
+              Explore display-ready figures designed for shelves, desks and
+              imaginative play.
+            </p>
+            <a class="button" href="products.html?category=Figurines"
+              >Shop Figurines →</a
+            >
+          </div>
+          <div class="hero-art">
+            <div class="hero-art-card">
+              <img
+                src="images/products/astronaut-photo.png"
+                alt="Astronaut figure illustration"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="hero-copy">
+            <p class="eyebrow">BOARD GAMES</p>
+            <h1>Make game night count.</h1>
+            <p>
+              From quick card games to strategy challenges, find something for
+              your next get-together.
+            </p>
+            <a class="button" href="products.html?category=Board%20Games"
+              >Shop Games →</a
+            >
+          </div>
+          <div class="hero-art">
+            <div class="hero-art-card">
+              <img
+                src="images/products/strategy-game-photo.png"
+                alt="Board game illustration"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="hero-copy">
+            <p class="eyebrow">DIECAST</p>
+            <h1>Small cars. Big collector energy.</h1>
+            <p>
+              Discover miniature classics and racing favourites made for display
+              and collecting.
+            </p>
+            <a class="button" href="products.html?category=Diecast%20Cars"
+              >Shop Diecast →</a
+            >
+          </div>
+          <div class="hero-art">
+            <div class="hero-art-card">
+              <img
+                src="images/products/racing-car-photo.png"
+                alt="Diecast racing car illustration"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-dots" aria-label="Choose promotion">
+          <button
+            class="hero-dot active"
+            aria-label="Promotion 1"
+            aria-current="true"
+          ></button
+          ><button
+            class="hero-dot"
+            aria-label="Promotion 2"
+            aria-current="false"
+          ></button
+          ><button
+            class="hero-dot"
+            aria-label="Promotion 3"
+            aria-current="false"
+          ></button
+          ><button
+            class="hero-dot"
+            aria-label="Promotion 4"
+            aria-current="false"
+          ></button>
+        </div>
+      </section>
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">TOY HAVEN</p>
+          <h2>Featured Collection</h2>
+          <p>A hand-picked preview of the products in our collection.</p>
+        </div>
+        <div id="featured-products" class="product-grid"></div>
+      </section>
+      <section class="potd reveal">
+        <div id="product-of-day" class="potd-card"></div>
+      </section>
+      <section class="section split-section reveal">
+        <div>
+          <p class="eyebrow">WHY TOY HAVEN?</p>
+          <h2>Made for play. Designed for collectors.</h2>
+          <p>
+            Our collection brings different kinds of fun together in one simple
+            browsing experience.
+          </p>
+        </div>
+        <div class="feature-list">
+          <article>
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Browse an organised collection by category or search.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Collect</h3>
+            <p>Save favourites and track your collection with localStorage.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Enjoy</h3>
+            <p>Use the cart and simulated checkout to complete an order.</p>
+          </article>
+        </div>
+      </section>
+      <section class="newsletter reveal">
+        <div>
+          <p class="eyebrow">STAY IN THE LOOP</p>
+          <h2>Get Toy Haven updates</h2>
+        </div>
+        <form id="newsletter-form" class="inline-form">
+          <label class="sr-only" for="newsletter-email">Email address</label
+          ><input
+            id="newsletter-email"
+            type="email"
+            placeholder="Your email address"
+            required
+          /><button class="button" type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <div id="product-modal" class="modal" hidden>
+      <div class="modal-backdrop" aria-hidden="true"></div>
+      <div
+        class="modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close product details"
+        >
+          ×
+        </button>
+        <div class="modal-image"></div>
+        <div class="modal-content">
+          <p class="eyebrow modal-category"></p>
+          <h2 id="modal-title" class="modal-title"></h2>
+          <p class="modal-description"></p>
+          <strong class="modal-price"></strong>
+          <div class="button-row">
+            <button type="button" class="button modal-add-cart">
+              Add to Cart</button
+            ><button type="button" class="button button-outline modal-wishlist">
+              ♡ Wishlist
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

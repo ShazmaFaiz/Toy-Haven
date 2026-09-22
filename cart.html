@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review your selected Toy Haven products and proceed to checkout."
+    />
+    <meta name="theme-color" content="#17243a" />
+    <meta name="author" content="Toy Haven" />
+    <title>Toy Haven | Shopping Cart</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Toy Haven home"
+        ><img src="images/logo.png" alt="Toy Haven logo" /><span
+          class="brand-name"
+          ><span>Toy</span> Haven</span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="" href="index.html">Home</a
+        ><a class="" href="products.html">Products</a
+        ><a class="" href="wishlist.html">Wishlist</a
+        ><a class="" href="feedback.html">Support</a
+        ><a class="active" href="cart.html"
+          >Cart <span class="cart-count">0</span></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">YOUR BAG</p>
+        <h1>Shopping Cart</h1>
+        <p>Review your selected products before checkout.</p>
+      </section>
+      <section class="section cart-layout">
+        <div id="cart-items"></div>
+        <aside class="summary-card">
+          <h2>Cart Summary</h2>
+          <div id="cart-summary"></div>
+          <button id="clear-cart" class="button button-secondary" type="button">
+            Clear Cart</button
+          ><a id="checkout-link" class="button" href="checkout.html"
+            >Proceed to Checkout</a
+          >
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

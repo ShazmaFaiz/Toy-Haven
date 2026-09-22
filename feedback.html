@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Toy Haven support, send feedback, and browse frequently asked questions."
+    />
+    <meta name="theme-color" content="#17243a" />
+    <meta name="author" content="Toy Haven" />
+    <title>Toy Haven | Feedback & Support</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Toy Haven home"
+        ><img src="images/logo.png" alt="Toy Haven logo" /><span
+          class="brand-name"
+          ><span>Toy</span> Haven</span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="products.html">Products</a
+        ><a href="wishlist.html">Wishlist</a
+        ><a class="active" href="feedback.html">Support</a
+        ><a href="cart.html">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-intro">
+        <p class="eyebrow">WE ARE HERE TO HELP</p>
+        <h1>Feedback & Support</h1>
+        <p>Find helpful information or send our team a message.</p>
+      </section>
+      <section class="section support-layout">
+        <div>
+          <h2>Frequently Asked Questions</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button
+                class="accordion-question"
+                type="button"
+                aria-expanded="false"
+              >
+                How long does delivery take? <span>+</span>
+              </button>
+              <div class="accordion-answer">
+                <p>
+                  Standard delivery usually takes 3–5 working days after your
+                  order is confirmed. Delivery times may vary slightly depending
+                  on your location, weekends and public holidays.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-question"
+                type="button"
+                aria-expanded="false"
+              >
+                How can I track my order? <span>+</span>
+              </button>
+              <div class="accordion-answer">
+                <p>
+                  Select “Track Order” in the header or footer, then enter your
+                  order number and the email used at checkout. You will see the
+                  latest package status, its most recent location and an updated
+                  delivery estimate.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-question"
+                type="button"
+                aria-expanded="false"
+              >
+                Which payment methods are accepted? <span>+</span>
+              </button>
+              <div class="accordion-answer">
+                <p>
+                  Toy Haven offers card payment and Cash on Delivery at
+                  checkout. This student website uses a simulated checkout, so
+                  no real card payment is processed.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-question"
+                type="button"
+                aria-expanded="false"
+              >
+                Can I change or cancel an order? <span>+</span>
+              </button>
+              <div class="accordion-answer">
+                <p>
+                  Please contact our support team as soon as possible and
+                  include your order number. Changes or cancellations can only
+                  be requested before the package has been dispatched.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-question"
+                type="button"
+                aria-expanded="false"
+              >
+                What is the return policy? <span>+</span>
+              </button>
+              <div class="accordion-answer">
+                <p>
+                  Unused items may be returned within 14 days in their original
+                  packaging. If an item arrives damaged or incorrect, contact
+                  support within 48 hours of delivery so the issue can be
+                  reviewed promptly.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button
+                class="accordion-question"
+                type="button"
+                aria-expanded="false"
+              >
+                How does the wishlist work? <span>+</span>
+              </button>
+              <div class="accordion-answer">
+                <p>
+                  Select the heart icon on any product to save it. On the
+                  Wishlist page, you can organise saved items as Interested,
+                  Owned or Not Interested and add them to your cart when ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form id="feedback-form" class="form-card" novalidate>
+          <h2>Send us a message</h2>
+          <p>We normally respond within one working day.</p>
+          <label for="feedback-name">Name</label
+          ><input
+            id="feedback-name"
+            name="name"
+            autocomplete="name"
+            required
+            minlength="2"
+          />
+          <label for="feedback-email">Email</label
+          ><input
+            id="feedback-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+          <label for="feedback-message">Message</label
+          ><textarea
+            id="feedback-message"
+            name="message"
+            rows="7"
+            required
+            minlength="10"
+          ></textarea>
+          <p
+            id="feedback-message-status"
+            class="form-message"
+            role="status"
+          ></p>
+          <button class="button" type="submit">Submit Message</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/feedback.js"></script>
+  </body>
+</html>
